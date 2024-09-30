@@ -38,7 +38,7 @@ public class AccountMngWorkAreaJPanel extends javax.swing.JPanel {
         btnCreateAccount = new javax.swing.JButton();
         btnManageAccount = new javax.swing.JButton();
 
-        btnCreateAccount.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
+        btnCreateAccount.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
         btnCreateAccount.setText("Create Account");
         btnCreateAccount.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -46,7 +46,7 @@ public class AccountMngWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnManageAccount.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
+        btnManageAccount.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
         btnManageAccount.setText("Manage Account");
         btnManageAccount.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -63,8 +63,11 @@ public class AccountMngWorkAreaJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btnManageAccount, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnCreateAccount, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(1772, Short.MAX_VALUE))
+                .addContainerGap(1758, Short.MAX_VALUE))
         );
+
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnCreateAccount, btnManageAccount});
+
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
@@ -72,7 +75,7 @@ public class AccountMngWorkAreaJPanel extends javax.swing.JPanel {
                 .addComponent(btnCreateAccount)
                 .addGap(31, 31, 31)
                 .addComponent(btnManageAccount)
-                .addContainerGap(983, Short.MAX_VALUE))
+                .addContainerGap(977, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

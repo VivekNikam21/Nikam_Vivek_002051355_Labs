@@ -56,22 +56,22 @@ public class ViewAccountJPanel extends javax.swing.JPanel {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("View Account");
 
-        lblRoutingNumber.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
+        lblRoutingNumber.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
         lblRoutingNumber.setText("Routing Number");
 
         txtRoutingNumber.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
 
-        lblAccountNumber.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
+        lblAccountNumber.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
         lblAccountNumber.setText("Account Number");
 
         txtAccountNumber.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
 
-        lblBankName.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
+        lblBankName.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
         lblBankName.setText("Bank Name");
 
         txtBankName.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
 
-        btnSave.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
+        btnSave.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
         btnSave.setText("Save");
         btnSave.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,7 +79,7 @@ public class ViewAccountJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnUpdate.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
+        btnUpdate.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
         btnUpdate.setText("Update");
         btnUpdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,7 +87,7 @@ public class ViewAccountJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnBack.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
+        btnBack.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
         btnBack.setText("<<< Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,8 +101,8 @@ public class ViewAccountJPanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(31, 31, 31)
-                .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnBack)
+                .addGap(4, 4, 4)
                 .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1794, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -151,7 +151,7 @@ public class ViewAccountJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnSave)
                     .addComponent(btnUpdate))
-                .addContainerGap(755, Short.MAX_VALUE))
+                .addContainerGap(751, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -163,7 +163,21 @@ public class ViewAccountJPanel extends javax.swing.JPanel {
     
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
         // TODO add your handling code here:
-        
+       String routingNumber = txtRoutingNumber.getText();
+       String accountNumber = txtAccountNumber.getText();
+       String bankName = txtBankName.getText();
+       
+       if(routingNumber.isBlank() || accountNumber.isBlank() || bankName.isBlank()){
+           JOptionPane.showMessageDialog(null, "All fields are mandatory");
+           return;
+       }
+       
+       account.setRountingNumber(routingNumber);
+       account.setAccountNumber(accountNumber);
+       account.setBankName(bankName);
+       
+       JOptionPane.showMessageDialog(null, "Account Successfully Updated", "Warning", JOptionPane.WARNING_MESSAGE);
+       setViewMode();
     }//GEN-LAST:event_btnSaveActionPerformed
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed

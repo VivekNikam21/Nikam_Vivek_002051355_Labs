@@ -23,7 +23,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="splitPane" alignment="0" max="32767" attributes="0"/>
+          <Component id="splitPane" alignment="0" pref="1920" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -53,7 +53,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                       <Component id="btnAccountMngAction" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="1670" max="32767" attributes="0"/>
+                      <EmptySpace pref="1638" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -62,7 +62,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                       <Component id="btnAccountMngAction" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="56" max="32767" attributes="0"/>
+                      <EmptySpace pref="53" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -71,7 +71,7 @@
             <Component class="javax.swing.JButton" name="btnAccountMngAction">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Rockwell" size="12" style="0"/>
+                  <Font name="Rockwell" size="14" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Open Account Manager Work Area"/>
               </Properties>

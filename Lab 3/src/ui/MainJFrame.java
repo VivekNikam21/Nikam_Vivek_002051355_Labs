@@ -45,7 +45,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
         splitPane.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
-        btnAccountMngAction.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
+        btnAccountMngAction.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
         btnAccountMngAction.setText("Open Account Manager Work Area");
         btnAccountMngAction.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -60,14 +60,14 @@ public class MainJFrame extends javax.swing.JFrame {
             .addGroup(topJPanelLayout.createSequentialGroup()
                 .addGap(24, 24, 24)
                 .addComponent(btnAccountMngAction)
-                .addContainerGap(1670, Short.MAX_VALUE))
+                .addContainerGap(1638, Short.MAX_VALUE))
         );
         topJPanelLayout.setVerticalGroup(
             topJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(topJPanelLayout.createSequentialGroup()
                 .addGap(22, 22, 22)
                 .addComponent(btnAccountMngAction)
-                .addContainerGap(56, Short.MAX_VALUE))
+                .addContainerGap(53, Short.MAX_VALUE))
         );
 
         splitPane.setTopComponent(topJPanel);
@@ -79,7 +79,7 @@ public class MainJFrame extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(splitPane)
+            .addComponent(splitPane, javax.swing.GroupLayout.DEFAULT_SIZE, 1920, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

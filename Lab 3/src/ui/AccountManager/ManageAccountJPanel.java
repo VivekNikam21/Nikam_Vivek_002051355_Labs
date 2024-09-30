@@ -48,7 +48,9 @@ public class ManageAccountJPanel extends javax.swing.JPanel {
         txtSearchBox = new javax.swing.JTextField();
         btnBack = new javax.swing.JButton();
 
+        btnSearch.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
         btnSearch.setText("Search");
+        btnSearch.setOpaque(true);
         btnSearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSearchActionPerformed(evt);
@@ -59,6 +61,7 @@ public class ManageAccountJPanel extends javax.swing.JPanel {
         lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle.setText("Manage Account");
 
+        tblAccounts.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
         tblAccounts.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -80,14 +83,18 @@ public class ManageAccountJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblAccounts);
 
+        btnViewDetails.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
         btnViewDetails.setText("View Details");
+        btnViewDetails.setOpaque(true);
         btnViewDetails.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnViewDetailsActionPerformed(evt);
             }
         });
 
+        btnDeleteAccount.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
         btnDeleteAccount.setText("Delete Account");
+        btnDeleteAccount.setOpaque(true);
         btnDeleteAccount.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDeleteAccountActionPerformed(evt);
@@ -100,8 +107,9 @@ public class ManageAccountJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnBack.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
+        btnBack.setFont(new java.awt.Font("Rockwell", 0, 14)); // NOI18N
         btnBack.setText("<<< Back");
+        btnBack.setOpaque(true);
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
@@ -114,8 +122,8 @@ public class ManageAccountJPanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(24, 24, 24)
-                .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnBack)
+                .addGap(10, 10, 10)
                 .addComponent(lblTitle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(382, Short.MAX_VALUE)
@@ -149,7 +157,7 @@ public class ManageAccountJPanel extends javax.swing.JPanel {
                 .addComponent(btnViewDetails)
                 .addGap(18, 18, 18)
                 .addComponent(btnDeleteAccount)
-                .addContainerGap(543, Short.MAX_VALUE))
+                .addContainerGap(536, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

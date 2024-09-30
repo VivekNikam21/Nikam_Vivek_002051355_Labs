@@ -51,4 +51,8 @@ public class Account {
     public String toString(){
         return getBankName();
     }
+
+    public void setRoutingNumber(String routingNumber) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
