@@ -8,10 +8,9 @@ import javax.swing.ImageIcon;
 
 /**
  *
- * @author anupbochare
+ * @author nikam
  */
 public class Supplier {
-        
     private String supplyName;
     private ProductCatalog productCatalog;
     private ImageIcon logoImage;
@@ -54,6 +53,4 @@ public class Supplier {
     public String toString() {
         return supplyName;
     }
-    
-    
 }

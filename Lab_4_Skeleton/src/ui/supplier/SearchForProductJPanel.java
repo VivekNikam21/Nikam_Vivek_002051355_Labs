@@ -44,15 +44,20 @@ public class SearchForProductJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(153, 153, 255));
 
-        lblTitle.setForeground(new java.awt.Color(255, 255, 255));
+        lblTitle.setForeground(new java.awt.Color(51, 0, 102));
         lblTitle.setText("Search for Product");
 
-        lblProductId.setForeground(new java.awt.Color(255, 255, 255));
+        lblProductId.setForeground(new java.awt.Color(51, 0, 102));
         lblProductId.setText("Product Id:");
 
-        idField.setBackground(new java.awt.Color(208, 221, 215));
+        idField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                idFieldActionPerformed(evt);
+            }
+        });
 
-        searchButton.setBackground(new java.awt.Color(208, 221, 215));
+        searchButton.setBackground(new java.awt.Color(0, 0, 102));
+        searchButton.setForeground(new java.awt.Color(255, 255, 255));
         searchButton.setText("Search Now >>");
         searchButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -60,7 +65,8 @@ public class SearchForProductJPanel extends javax.swing.JPanel {
             }
         });
 
-        jButton1.setBackground(new java.awt.Color(208, 221, 215));
+        jButton1.setBackground(new java.awt.Color(0, 0, 102));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("<< Back");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -73,18 +79,20 @@ public class SearchForProductJPanel extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(37, 37, 37)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblProductId)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1)
                         .addGap(37, 37, 37)
+                        .addComponent(jButton1)
+                        .addGap(758, 758, 758)
                         .addComponent(lblTitle))
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(681, 681, 681)
+                        .addComponent(lblProductId)
+                        .addGap(18, 18, 18)
                         .addComponent(idField, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(55, 55, 55)
+                        .addGap(43, 43, 43)
                         .addComponent(searchButton)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(758, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -93,11 +101,10 @@ public class SearchForProductJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(lblTitle))
-                .addGap(61, 61, 61)
-                .addComponent(lblProductId)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(45, 45, 45)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(idField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblProductId)
                     .addComponent(searchButton))
                 .addContainerGap())
         );
@@ -129,6 +136,10 @@ public class SearchForProductJPanel extends javax.swing.JPanel {
         CardLayout layout = (CardLayout)workArea.getLayout();
         layout.previous(workArea);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void idFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_idFieldActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
