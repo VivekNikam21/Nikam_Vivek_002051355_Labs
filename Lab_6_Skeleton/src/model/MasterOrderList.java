@@ -14,11 +14,12 @@ public class MasterOrderList {
     
     ArrayList<Order> orderList;
 
-     public MasterOrderList() {
-        
+
+    
+    public MasterOrderList(){
         orderList = new ArrayList<Order>();
     }
-     
+    
     public ArrayList<Order> getOrderList() {
         return orderList;
     }
@@ -26,8 +27,9 @@ public class MasterOrderList {
     public void setOrderList(ArrayList<Order> orderList) {
         this.orderList = orderList;
     }
-
-   
     
+    public void addNewOrder(Order order){
+        this.orderList.add(order);
+    }
     
 }

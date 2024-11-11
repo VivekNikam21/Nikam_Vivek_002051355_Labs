@@ -16,8 +16,9 @@ import javax.swing.JPanel;
  */
 public class ViewProductDetailJPanel extends javax.swing.JPanel {
 
-    JPanel userProcessContainer;
+    JPanel userProcessContainer; 
     Product product;
+
     /** Creates new form CreateProductJPanel */
     public ViewProductDetailJPanel(JPanel userProcessContainer, Product product) {
         initComponents();
@@ -29,8 +30,6 @@ public class ViewProductDetailJPanel extends javax.swing.JPanel {
         txtId.setText(String.valueOf(product.getModelNumber()));
         txtPrice.setText(String.valueOf(product.getPrice()));
         txtAvail.setText(String.valueOf(product.getAvail()));
-        
-        
     }
     
     /** This method is called from within the constructor to
@@ -139,7 +138,7 @@ public class ViewProductDetailJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         userProcessContainer.remove(this);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-        layout.previous(userProcessContainer);
+        layout.previous(userProcessContainer); 
     }//GEN-LAST:event_backButton1ActionPerformed
     
     

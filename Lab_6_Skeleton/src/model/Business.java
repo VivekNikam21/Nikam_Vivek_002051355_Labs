@@ -14,8 +14,8 @@ public class Business {
     SupplierDirectory supplierDirectory;
     
     public Business() {
-        supplierDirectory = new SupplierDirectory();
         masterOrderList = new MasterOrderList();
+        supplierDirectory = new SupplierDirectory();
     }
 
     public MasterOrderList getMasterOrderList() {
@@ -34,6 +34,6 @@ public class Business {
         this.supplierDirectory = supplierDirectory;
     }
     
-    
+        
     
 }

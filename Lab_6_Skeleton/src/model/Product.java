@@ -15,6 +15,7 @@ public class Product {
     private double price;
     private int modelNumber;
     private int avail;
+    
 
     private static int count = 0;
 
@@ -44,20 +45,20 @@ public class Product {
         this.price = price;
     }
 
-    public int getAvail() {
-        return avail;
-    }
-
-    public void setAvail(int avail) {
-        this.avail = avail;
-    }
-
     public int getModelNumber() {
         return modelNumber;
     }
 
     public void setModelNumber(int modelNumber) {
         this.modelNumber = modelNumber;
+    }
+    
+    public int getAvail() {
+        return avail;
+    }
+
+    public void setAvail(int avail) {
+        this.avail = avail;
     }
 
 }

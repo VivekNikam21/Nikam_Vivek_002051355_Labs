@@ -13,11 +13,11 @@ public class OrderItem {
     Product product;
     double salesPrice;
     int quantity;
-
+    
     public OrderItem(Product product, double salesPrice, int quantity) {
-        this.product = product;
-        this.salesPrice = salesPrice;
-        this.quantity = quantity;
+    this.product = product;
+    this.salesPrice = salesPrice;
+    this.quantity = quantity;
     }
 
     public Product getProduct() {
@@ -43,6 +43,10 @@ public class OrderItem {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
-    
+
+    public String toString(){
+        return this.product.toString();
+    }
+
     
 }
