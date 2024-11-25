@@ -21,7 +21,7 @@ public class AnalysisHelper {
     public void getAverageLikesPerComments() {
         Map<Integer, Comment> comments = DataStore.getInstance().getComments();
         int likeNumber = 0;
-        int commentNumber = comments.size();
+        int commentNumber = comm.size();
         for (Comment c : comments.values()) {
             likeNumber += c.getLikes();
         }
